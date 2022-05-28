@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/adebimpecole/intro-component-with-signup-form.git)
 - Live Site URL: [Add live site URL here](https://tangerine-frangipane-e5a6b7.netlify.app/)
 
 ## My process
