@@ -1,0 +1,156 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("images/bg-intro-desktop.png");
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 90px 200px;
+    grid-gap: 80px;
+    place-items:  center;
+}
+form{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 20px 30px 30px 30px;
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+}
+
+/* input field */
+input{
+    border-radius: 3px;
+    height: 50px;
+    padding: 0 30px;
+    border-color: hsl(246, 25%, 77%);
+    outline-color: hsl(246, 25%, 77%);
+    font-weight: bolder;
+    width: 440px;
+}
+.inputImage:focus{
+    border-color: black;
+}
+
+/* Buttons */
+button{
+    border-radius: 5px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#submit{
+    margin: 0;
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    box-shadow: 0 3px #6db284;
+}
+#submit:hover{
+    background-color: hsl(154deg 42% 62%);
+}
+#button{
+    margin-bottom: 20px;
+    width: 560px;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0 6px rgb(192 101 101);
+}
+
+/* section 1 */
+h1{
+    font-weight: bolder;
+    font-size: 40px;
+}
+#main{
+    color: white;
+}
+h1 + div{
+    font-size: 14px;
+}
+
+/* text at the bottom of the form */
+.text{
+    text-align: center;
+    font-size: 12px;
+    color: hsl(246, 25%, 77%);
+}
+.textspan{
+    color: hsl(0, 100%, 74%);
+}
+
+/* error text */
+.error{
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    font-style: italic;
+}
+input + div{
+    text-align: right;
+    padding: 0 5px;
+}
+
+/* error image */
+.inputdiv{
+    position: relative;
+}    
+
+.inputImage{
+    background-position:right;   
+    background-repeat:no-repeat;   
+    background-origin: content-box;
+    background-image: none;
+}
+
+@media only screen and (max-width: 480px){
+    body{
+        background-image: url("images/bg-intro-mobile.png");
+    }
+    main{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        padding: 20px 0 20px 0;
+        grid-gap: 40px;
+        place-items:  center;
+    }
+    form{
+        display: grid;
+        grid-gap: 10px;
+        padding: 20px 20px 20px 20px;
+        border-radius: 5px;
+        width: 300px;
+    }
+    /* section 1 */
+    h1{
+        font-weight: bold;
+        font-size: 28px;
+        text-align: center;
+    }
+    h1 + div{
+        font-size: 12px;
+        text-align: center;
+
+    }
+    /* input */
+    input{
+        border-radius: 4px;
+        height: 45px;
+        padding: 0 20px;
+        font-weight: bolder;
+        width: 260px;
+        font-size: 12px;
+    }
+    /* button */
+    #button{
+        width: 340px;
+    }
+    /* text */
+    .text{
+        font-size: 12px;
+    }    
+}
